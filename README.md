@@ -1,6 +1,6 @@
 # vuejs-cours
 
-## Cours du 09/02/2022
+## Cours du 09/02/2022 - 01/03/2022
 
 ### let app = Vue.createApp({});
 
@@ -87,7 +87,7 @@ Monte la vue de l'application pour l'affichage
 
 En testant cette configuration d'appel, entre le composant "login-form" et "test-box", il n'y a que le premier composant d'affiché
 
-**@click=""**
+**@click="fonction()"**
 
 Appel une fonction lors du clique
 
@@ -95,3 +95,11 @@ Appel une fonction lors du clique
 
 Permet d'utiliser dans le code html, des variables initialisées au préalable
 
+
+# DOM
+
+Le virtual DOM est une version moins lourde du DOM traditionnel, il se situe entre le DOM et l'instance de la vue, permettant de re-render uniquement les parties de la page ayant et non l'ensemble.
+
+Lors d'un changement, au départ les DOM sont identique, puis le virtual DOM est midifié modifiant l'affichage, puis c'est au DOM de récupérer le changement pour que les deux redeviennent identique.
+
+source : [https://blog.logrocket.com/how-the-virtual-dom-works-in-vue-js/](https://blog.logrocket.com/how-the-virtual-dom-works-in-vue-js/)
