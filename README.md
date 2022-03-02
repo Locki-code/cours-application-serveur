@@ -102,4 +102,13 @@ Le virtual DOM est une version moins lourde du DOM traditionnel, il se situe ent
 
 Lors d'un changement, au départ les DOM sont identique, puis le virtual DOM est midifié modifiant l'affichage, puis c'est au DOM de récupérer le changement pour que les deux redeviennent identique.
 
+## Optimisation
+
+L'objectif de l'optimiseur est de parcourir l'AST généré et de détecter les sous-arbres qui sont purement statiques.
+Une fois qu'il a détecté les sous-arbres statiques, Vue les hissera dans des constantes, de sorte que Vue ne créera pas de nouveaux nœuds pour eux à chaque nouveau rendu.
+
+## Observateur
+
+Un observateur est créé pour chaque composant lorsqu'une application Vue est initialisée. Il analyse une expression, collecte les abonnés et déclenche un rappel lorsque la valeur de l'expression change.
+
 source : [https://blog.logrocket.com/how-the-virtual-dom-works-in-vue-js/](https://blog.logrocket.com/how-the-virtual-dom-works-in-vue-js/)
