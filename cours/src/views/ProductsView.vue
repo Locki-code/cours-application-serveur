@@ -24,8 +24,4 @@ export default {
     ProductCard
   }
 }
-
-function rendreNoeud(noeud){
-
-}
 </script>
